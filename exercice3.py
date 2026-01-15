@@ -32,3 +32,11 @@ class Outils:
 
     def moyenne(self):
         return self.somme() / len(self.nombres)
+
+outil = Outils()
+outil.saisir()
+
+print("Le plus petit entier est :", outil.min())
+print("Le plus grand entier est :", outil.max())
+print("La somme des entiers est :", outil.somme())
+print("La moyenne des entiers est :", outil.moyenne())
