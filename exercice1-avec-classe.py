@@ -21,3 +21,9 @@ class Affichage:
         for i in range(1, self.triangle.n + 1):
             print(self.triangle.ligne_inversee(i) + ' ' + self.triangle.ligne_normale(i))
 
+# Programme principal
+n = int(input("Entrez un entier : "))
+tri = Triangle(n)
+aff = Affichage(tri)
+aff.afficher()
+
