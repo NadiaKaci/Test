@@ -1,5 +1,5 @@
 
-from PyQt6.QtWidgets import QApplication, QWidget, QGridLayout, QLineEdit
+from PyQt6.QtWidgets import QApplication, QWidget, QGridLayout, QLineEdit, QLabel
 
 # créer l'application:
 app = QApplication([])
@@ -14,8 +14,10 @@ window.setLayout(grid)
 #creer LineEdit
 nombre_input = QLineEdit(window)
 grid.addWidget(nombre_input, 1, 1)
+grid.addWidget(QLabel("Voici le double: "), 2, 0)
 
-
+grid.addWidget(QLabel("Enter la valeur de N: "), 1, 0)
+grid.addWidget(QLabel("Voici le double: "), 2, 0)
 
 window.show()
 app.exec()
