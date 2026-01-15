@@ -8,3 +8,6 @@ for i in range(1, n + 1):
     ligne1 = ' ' * (n - i) + '*' * i
     # céer espace entre les triangles
     espace = ' '
+    # deuxième triangle normal
+    ligne2 = '*' * i
+
