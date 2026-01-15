@@ -8,3 +8,7 @@ class Triangle:
     def ligne_inversee(self, i):
         return ' ' * (self.n - i) + '*' * i
 
+    # ligne du deuxième triangle (normal)
+    def ligne_normale(self, i):
+        return '*' * i
+
