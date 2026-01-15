@@ -23,3 +23,12 @@ class Outils:
             if n > maximum:
                 maximum = n
         return maximum
+
+    def somme(self):
+        total = 0
+        for n in self.nombres:
+            total += n
+        return total
+
+    def moyenne(self):
+        return self.somme() / len(self.nombres)
