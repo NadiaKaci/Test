@@ -11,6 +11,19 @@ def calculer_double():
     resultat.setText(str(double_valeur))
     print("valeur double : " + str(valeur))
 
+#creation de la fonction sauvegarde:
+def sauvegarder():
+    f = open("resultats.txt", "w")
+    f.write(resultat.text())
+    f.close()
+
+#creation de la fonction charger():
+def charger():
+    f = open("resultats.txt", "r")
+    valeur = f.readline()
+    f.close()
+    resultat.setText(valeur)
+
 # créer l'application:
 app = QApplication([])
 window = QWidget()
