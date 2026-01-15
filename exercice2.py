@@ -61,6 +61,7 @@ btn_sauver.clicked.connect(sauvegarder)
 btn_charger = QPushButton("Charger")
 grid.addWidget(btn_charger, 4, 1)
 btn_charger.clicked.connect(charger)
+f = open("resultats.txt", "w")
 
 window.show()
 app.exec()
