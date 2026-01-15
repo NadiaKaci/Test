@@ -10,4 +10,6 @@ for i in range(1, n + 1):
     espace = ' '
     # deuxième triangle normal
     ligne2 = '*' * i
+    # afficher la ligne complète
+    print(ligne1 + espace + ligne2)
 
