@@ -29,6 +29,10 @@ grid.addWidget(QLabel("Voici le double: "), 2, 0)
 grid.addWidget(QLabel("Enter la valeur de N: "), 1, 0)
 grid.addWidget(QLabel("Voici le double: "), 2, 0)
 
+#Creation QlineEdit de resultat:
+resultat = QLineEdit()
+grid.addWidget(resultat, 2, 1)
+
 #creation des button:
 btn1 = QPushButton("valider l'operation")
 grid.addWidget(btn1, 3, 1)
