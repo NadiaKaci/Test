@@ -1,6 +1,16 @@
 
 from PyQt6.QtWidgets import QApplication, QWidget, QGridLayout, QLineEdit, QLabel, QPushButton
 
+def calculer_double():
+    if nombre_input.text() == "":
+        valeur = 0
+    else:
+        valeur = int(nombre_input.text())
+
+    double_valeur = valeur * 2  # ✅ ligne corrigée : on utilise une variable différente pour le calcul
+    resultat.setText(str(double_valeur))
+    print("valeur double : " + str(valeur))
+
 # créer l'application:
 app = QApplication([])
 window = QWidget()
@@ -22,8 +32,8 @@ grid.addWidget(QLabel("Voici le double: "), 2, 0)
 #creation des button:
 btn1 = QPushButton("valider l'operation")
 grid.addWidget(btn1, 3, 1)
-
-
+# connecter le button a la fonction:
+btn1.clicked.connect(calculer_double)
 
 window.show()
 app.exec()
