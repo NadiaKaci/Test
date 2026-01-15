@@ -52,6 +52,16 @@ grid.addWidget(btn1, 3, 1)
 # connecter le button a la fonction:
 btn1.clicked.connect(calculer_double)
 
+# Button sauvegarder:
+btn_sauver = QPushButton("Sauvegarder")
+grid.addWidget(btn_sauver, 4, 0)
+btn_sauver.clicked.connect(sauvegarder)
+
+# Button charger:
+btn_charger = QPushButton("Charger")
+grid.addWidget(btn_charger, 4, 1)
+btn_charger.clicked.connect(charger)
+
 window.show()
 app.exec()
 
